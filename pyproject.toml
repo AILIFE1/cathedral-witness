@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "cathedral-witness"
+version = "0.1.0"
+description = "Cryptographic verification layer for any AI agent memory system"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+keywords = ["ai", "agents", "memory", "verification", "security", "cathedral"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Security :: Cryptography",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://cathedral-ai.com"
+Repository = "https://github.com/AILIFE1/cathedral-witness"
+Documentation = "https://cathedral-ai.com/docs/witness"
+
+[tool.hatch.build.targets.wheel]
+packages = ["cathedral_witness"]
